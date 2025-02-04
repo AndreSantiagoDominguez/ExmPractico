@@ -1,6 +1,7 @@
 package repositories
 
+import "exmpractico/src/products/domain/entities"
+
 type IProduct interface {
-	createProduct(product string)
-	GetAllProduct() ([]IProduct, error)
+	CreateProduct(product *entities.Product) (int64, error)
 }
