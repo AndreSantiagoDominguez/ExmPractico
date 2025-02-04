@@ -1,8 +1,8 @@
 package entities
 
 type Product struct {
-	id int 
+	id int64
 	Name string
-	Amount int 
+	Quantity int 
 	Bcode string  
 }
